@@ -1,0 +1,26 @@
+﻿@model EncryptProva.Models.dadosencrypt
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>dadosencrypt</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.campo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.campo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Editar", "Edit", new { id = Model.id }) |*@
+    @Html.ActionLink("voltar", "Index")
+</p>
